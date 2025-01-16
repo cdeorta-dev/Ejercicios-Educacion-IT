@@ -24,6 +24,12 @@
 						"internalType": "uint256",
 						"name": "monto",
 						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "total",
+						"type": "uint256"
 					}
 				],
 				"name": "EtherRecibido",
@@ -35,7 +41,7 @@
 					{
 						"indexed": false,
 						"internalType": "address",
-						"name": "remitente",
+						"name": "ganador",
 						"type": "address"
 					},
 					{
@@ -45,7 +51,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "ganador",
+				"name": "Ganador",
 				"type": "event"
 			},
 			{
@@ -74,31 +80,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "GetMayorApostador",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "address payable",
-								"name": "direccion",
-								"type": "address"
-							},
-							{
-								"internalType": "uint256",
-								"name": "apuesta",
-								"type": "uint256"
-							}
-						],
-						"internalType": "struct subasta.Person",
-						"name": "",
-						"type": "tuple"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -110,13 +91,8 @@
 				"outputs": [
 					{
 						"internalType": "address payable",
-						"name": "direccion",
+						"name": "",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "apuesta",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -128,12 +104,26 @@
 				"outputs": [
 					{
 						"internalType": "address payable",
-						"name": "direccion",
+						"name": "",
 						"type": "address"
-					},
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "totalinversion",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "apuesta",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -143,6 +133,13 @@
 			{
 				"inputs": [],
 				"name": "transferEtherOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "transferEtherOwnerGanador",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -180,11 +177,11 @@
 	},
 	"sources": {
 		"subasta.sol": {
-			"keccak256": "0xc4d3fd4019911b98f5e9298ce146b07002cd7732c023845461bfd5b065193b1e",
+			"keccak256": "0xf22345cfff8527658eb2f4da3e96a712aa2554fb552ffd60f5c0ab09e05da3c9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://451b666da54cdb5db80c7de2838cd4a466c2c9583d060b1e9813f52689205bf5",
-				"dweb:/ipfs/QmYDipgJJ4Lft3Re6uD4aGYqrpyJQu1jAr9t3AQiFxZXhW"
+				"bzz-raw://7a9f79a61bbdf7081adfa69a1ef407d3280e78a1cc8f7e8695de7b09e39ea5b9",
+				"dweb:/ipfs/QmcBv6ztoTAu4QfPe3JScYJnZLqjy2kw1z4sw684NEvZci"
 			]
 		}
 	},

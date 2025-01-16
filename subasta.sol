@@ -13,6 +13,7 @@ el owner no puede participar
 
 contract subasta {
     event EtherRecibido(address remitente, uint256 monto,uint256 total);
+     event Ganador(address ganador, uint256 monto);
     address private owner;
     struct Person{
         address payable direccion;
@@ -20,7 +21,7 @@ contract subasta {
     }
     mapping (address  => uint256) public totalinversion;
     address payable[] public listaApostadores;
-     address payable mayorApostador;
+     address payable public mayorApostador;
     constructor() payable {
         owner=msg.sender;
         mayorApostador= payable(msg.sender);
@@ -37,7 +38,7 @@ contract subasta {
             revert("fallo el envio");
         }
          devolverApuestas();
-        
+         emit Ganador(mayorApostador,totalinversion[mayorApostador]);
     }
      function transferEtherOwner() external onlyOwner {
         address payable _to;
@@ -46,6 +47,13 @@ contract subasta {
             revert("fallo el envio");
         }
         
+        for (uint256 i ;i< listaApostadores.length;i++ ){
+           
+         totalinversion[listaApostadores[i]]=0;
+          
+        }   
+        //16/01/2025
+        delete listaApostadores;
         
     }
 //el owner no puede participar
@@ -55,8 +63,8 @@ contract subasta {
 
         require(msg.value >= 1000, "El monto debe ser al menos 1000 wei"); 
         require(msg.value % 100 == 0, "El monto debe ser multiplo de 100 wei"); 
-     
-        listaApostadores.push(payable(msg.sender)) ;
+       if(totalinversion[msg.sender]==0){  listaApostadores.push(payable(msg.sender)) ;}
+      
          totalinversion[msg.sender]+= msg.value;
        
   if(totalinversion[mayorApostador]<totalinversion[msg.sender]){
