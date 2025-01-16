@@ -11,6 +11,44 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "remitente",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "monto",
+						"type": "uint256"
+					}
+				],
+				"name": "EtherRecibido",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "remitente",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "monto",
+						"type": "uint256"
+					}
+				],
+				"name": "ganador",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "GetApostadores",
 				"outputs": [
@@ -142,11 +180,11 @@
 	},
 	"sources": {
 		"subasta.sol": {
-			"keccak256": "0x62cbcf6ef48ff1469468917ce52caac9f1d26f743b40096dd129e3705d093699",
+			"keccak256": "0xc4d3fd4019911b98f5e9298ce146b07002cd7732c023845461bfd5b065193b1e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef2991b627dd880f14c6bd26bde54f08415858d20e3855acf4f328498e87a1f7",
-				"dweb:/ipfs/QmZBj7b8aHkdiwSJP7wnGJMot7MEv1Ec7rjGun2bDdqV2E"
+				"bzz-raw://451b666da54cdb5db80c7de2838cd4a466c2c9583d060b1e9813f52689205bf5",
+				"dweb:/ipfs/QmYDipgJJ4Lft3Re6uD4aGYqrpyJQu1jAr9t3AQiFxZXhW"
 			]
 		}
 	},
