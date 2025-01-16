@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "spreadmoney",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"airdrop.sol": "airdrop"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"airdrop.sol": {
+			"keccak256": "0x05bb48a1f742fc970f7ade6dcc7ca24b42b82c484a7623066a5c59eb58a0cefb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8a5ae94ffe4de1d0bea34efd87d8a47df320f4ce6dc78e2b3e9e544924d08850",
+				"dweb:/ipfs/QmRAMRkvSMJYq7FkXLCoVr3RBvP6r1pPTZpKfEXhDGTaGa"
+			]
+		}
+	},
+	"version": 1
+}
