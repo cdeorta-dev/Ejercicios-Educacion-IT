@@ -1,0 +1,154 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "GetApostadores",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address payable",
+								"name": "direccion",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "apuesta",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct subasta.Person[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "GetMayorApostador",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address payable",
+								"name": "direccion",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "apuesta",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct subasta.Person",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listaApostadores",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "direccion",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "apuesta",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mayorApostador",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "direccion",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "apuesta",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "transferEtherOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"subasta.sol": "subasta"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"subasta.sol": {
+			"keccak256": "0x62cbcf6ef48ff1469468917ce52caac9f1d26f743b40096dd129e3705d093699",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ef2991b627dd880f14c6bd26bde54f08415858d20e3855acf4f328498e87a1f7",
+				"dweb:/ipfs/QmZBj7b8aHkdiwSJP7wnGJMot7MEv1Ec7rjGun2bDdqV2E"
+			]
+		}
+	},
+	"version": 1
+}
